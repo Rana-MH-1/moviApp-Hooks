@@ -1,0 +1,6 @@
+.moviegrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 120px;
+    grid-row-gap: 50px;
+}
