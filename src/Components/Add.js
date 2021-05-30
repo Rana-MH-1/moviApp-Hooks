@@ -9,6 +9,7 @@ const [id, setId] = useState(uuidv4());
 const [movie, setMovie] = useState({
     title: '',
     posterUrl: '',
+    trailerUrl:'',
     description:'',
     rating:0
     });    
@@ -20,6 +21,7 @@ const handleClose = () => {
     setMovie({
     title: '',
     posterUrl: '',
+    trailerUrl:'',
     description:'',
     rating:0
     })};
@@ -54,6 +56,8 @@ const style={
     <Form.Control type="text" placeholder="title" name='title' onChange={Handlechange}/>
     <Form.Label>posterUrl</Form.Label>
     <Form.Control type="text" placeholder="posterUrl" name='posterUrl' onChange={Handlechange} />
+    <Form.Label>Rating</Form.Label>
+    <Form.Control type="text" placeholder="trailerUrl" name='trailerUrl' onChange={Handlechange} />
     <Form.Label>Rating</Form.Label>
     <Form.Control type="text" placeholder="Rating" name='rating' onChange={Handlechange} />
     
